@@ -61,42 +61,40 @@
         margin-bottom: 30px;
         margin-top: 50px;
       }
+      .gridFour-wrapper1 {
+        margin: 10px;
+      }
       #gridFour-wrapper2 {
         display: grid;
         grid-template-columns: 1fr 1fr;
+        margin: 10px;
       }
-
+      #gridFour-wrapper2 p {
+        margin: 10px;
+      }
       .gridFive {
         display: grid;
-        grid-template-rows: 1fr;
-        margin-bottom: 110px;
-        margin-top: 50px;
+        grid-template-rows: 1fr 1fr;
+        width: 500px;
+        background-color: lightgray;
       }
 
-      .gridFive-wrapper1 {
-        grid-template-columns: 1fr;
-        margin-bottom: 110px;
-        margin-top: 50px;
+      .firstChild {
+        margin: 10px;
       }
 
-      .gridFive-wrapper2 {
+      .secondChild {
         display: grid;
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 2fr 1fr;
+        margin: 10px;
       }
 
-      .gridFive-wrapper2 img {
+      .secondChild img {
+        height: 200px;
         width: 200px;
-        height: 200px;
         object-fit: cover;
-        background-color: rgb(114, 206, 114);
       }
 
-      .mira-img img {
-        width: 400px;
-        height: 200px;
-        object-fit: cover;
-        background-color: rgb(114, 206, 114);
-      }
       .gridSix {
         display: grid;
         grid-template-columns: 1fr 3fr;
@@ -161,21 +159,13 @@
     </div>
 
     <div class="gridFive">
-      <div class="gridFive-wrapper1">
-        <p>My Even More Awesome Text</p>
+      <div class="firstChild">
+        <p>This is a paragraph in the first child div.</p>
       </div>
-
-      <div class="gridFive-wrapper2">
-        <div class="mira-img">
-          <img
-            src="images/mira-kemppainen-qC117ahi-mE-unsplash.jpg"
-            alt="mira"
-          />
-        </div>
-
-        <div class="josh-img">
-          <img src="images/josh-hild-_TuI8tZHlk4-unsplash.jpg" alt="josh" />
-        </div>
+      <div class="secondChild">
+        <img src="images/mira-kemppainen-qC117ahi-mE-unsplash.jpg" alt="Image 1">
+        <img src="images/josh-hild-_TuI8tZHlk4-unsplash.jpg" alt="Image 2">
+       
       </div>
     </div>
 
