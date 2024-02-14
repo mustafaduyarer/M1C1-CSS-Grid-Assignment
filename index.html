@@ -1,26 +1,188 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>M1C1 CSS Grid Assignment-MD</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Italianno&family=Lato&family=Roboto+Slab&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
 
     <style>
-        .gridOne{
-            display: grid; 
-            grid-template-columns: 1fr 1fr;
-            margin-left: 100px;
-           
-        }
-    </style>
-</head>
-<body>
+      .gridOne {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin-left: 100px;
+        margin-bottom: 30px;
+        margin-top: 50px;
+      }
 
+      .gridTwo {
+        display: grid;
+        grid-template-columns: 1fr 1fr 2fr;
+        margin-bottom: 30px;
+        margin-top: 50px;
+      }
+      .gridThree {
+        display: grid;
+        grid-template-rows: 1fr 3fr;
+        width: 500px;
+        height: 300px;
+        margin-bottom: 30px;
+        margin-top: 50px;
+      }
+
+      .green img {
+        width: 500px;
+        height: 225px;
+        object-fit: cover;
+        background-color: green;
+      }
+      .pink {
+        background-color: pink;
+      }
+
+      .gridFour {
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+        width: 500px;
+        background-color: green;
+        margin-bottom: 30px;
+        margin-top: 50px;
+      }
+      #gridFour-wrapper2 {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+      }
+
+      .gridFive {
+        display: grid;
+        grid-template-rows: 1fr;
+        margin-bottom: 110px;
+        margin-top: 50px;
+      }
+
+      .gridFive-wrapper1 {
+        grid-template-columns: 1fr;
+        margin-bottom: 110px;
+        margin-top: 50px;
+      }
+
+      .gridFive-wrapper2 {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+      }
+
+      .gridFive-wrapper2 img {
+        width: 200px;
+        height: 200px;
+        object-fit: cover;
+        background-color: rgb(114, 206, 114);
+      }
+
+      .mira-img img {
+        width: 400px;
+        height: 200px;
+        object-fit: cover;
+        background-color: rgb(114, 206, 114);
+      }
+      .gridSix {
+        display: grid;
+        grid-template-columns: 1fr 3fr;
+        width: 500px;
+        background-color: lightgray;
+        margin-bottom: 110px;
+        margin-top: 50px;
+      }
+
+      .gridSix i {
+        font-size: 50px;
+        color: red;
+        margin: 10px;
+      }
+
+      .gridSix p {
+        font-family: "Italianno", cursive;
+        font-size: 20px;
+        margin: 10px;
+      }
+    </style>
+  </head>
+  <body>
     <div class="gridOne">
-     <p>Hello World</p>
-     <p style="color: blue;">My Fantastic Content</p>
+      <p>Hello World</p>
+      <p style="color: blue">My Fantastic Content</p>
     </div>
 
-    
-</body>
+    <div class="gridTwo">
+      <div class="red" style="background-color: red">
+        <p>This is the first child div of gridTwo.</p>
+      </div>
+      <div class="blue" style="background-color: blue">
+        <p>This is the second child div of gridTwo.</p>
+      </div>
+      <div class="yellow" style="background-color: yellow">
+        <p>This is the third child div of gridTwo.</p>
+      </div>
+    </div>
+
+    <div class="gridThree">
+      <div class="pink">
+        <p>This is the first child div of gridThree.</p>
+      </div>
+      <div class="green">
+        <img
+          src="images/kelly-sikkema-hSPVuakrJqs-unsplash.jpg"
+          alt="kelly-Ice"
+        />
+      </div>
+    </div>
+
+    <div class="gridFour">
+      <div class="gridFour-wrapper1">
+        <p>My Even More Awesome Text</p>
+      </div>
+
+      <div id="gridFour-wrapper2">
+        <p>My left text</p>
+        <p>My right text</p>
+      </div>
+    </div>
+
+    <div class="gridFive">
+      <div class="gridFive-wrapper1">
+        <p>My Even More Awesome Text</p>
+      </div>
+
+      <div class="gridFive-wrapper2">
+        <div class="mira-img">
+          <img
+            src="images/mira-kemppainen-qC117ahi-mE-unsplash.jpg"
+            alt="mira"
+          />
+        </div>
+
+        <div class="josh-img">
+          <img src="images/josh-hild-_TuI8tZHlk4-unsplash.jpg" alt="josh" />
+        </div>
+      </div>
+    </div>
+
+    <div class="gridSix">
+      <i class="fas fa-heart"></i>
+
+      <p>MY AWESOME GOOGLE FONT IS APPLIED HERE</p>
+    </div>
+  </body>
 </html>
